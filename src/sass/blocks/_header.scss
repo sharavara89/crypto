@@ -1,0 +1,17 @@
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    min-height: 70px;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 1000;
+    &__wrapper {
+        padding: 16px 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

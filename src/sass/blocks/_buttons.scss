@@ -1,0 +1,32 @@
+.btn {
+    width: 287px;
+    height: 46px;
+    background: #38A5DB;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: all .3s;
+    &:hover {
+        box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
+    }
+    &_video {
+        width: 32px;
+        height: 32px;
+        border-radius: 100px;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            margin-left: 4px;
+        }
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
