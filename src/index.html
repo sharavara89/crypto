@@ -42,10 +42,9 @@
                     <ul class="menu__items">
                         <li class="menu__item"><a href="#home" class="menu__link">ICO</a></li>
                         <li class="menu__item"><a href="#team" class="menu__link">Team</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
                     </ul>
                 </nav>
-
             </div>
         </div>
     </header>
@@ -76,19 +75,18 @@
 
             <div class="promo__video">
                 <img srcset="img/video_2x.png, img/video_2x.png 2x" src="img/video_2x.png" alt="video" class="promo__video-img">
-                <button class="btn btn_video promo__video-btn"><span class="icon-play3"></span></button>
             </div>
 
-            <!-- <a href="" class="promo__video">
-                <img src="img/video_2x.png" alt="video" class="promo__video-img">
-            </a> -->
+            <!-- <button class="js-modal-btn" data-video-id="7TUOI23spt0">
+                <img srcset="img/video_2x.png, img/video_2x.png 2x" src="img/video_2x.png" alt="video" class="promo__video-img">
+            </button> -->
         </div>
     </section>
 <!-- Team section -->
     <section id="team" class="team">
         <div class="container">
             <h2 class="team__title title">Team</h2>
-
+<!-- Slick slider -->
             <div class="team__slider">
                 <div>
                     <div class="team__slider-picture">
@@ -154,15 +152,54 @@
         </div>
     </section>
 <!-- Contact section -->
-    <section class="contact">
+    <section id="contact" class="contactus">
         <div class="container">
+            <h2 class="contactus__title title title_white">Contact Us</h2>
 
+            <div class="contactus__text">Most calendars are designed for teams. 
+                Slate is designed for freelancers</div>
+
+            <form id="contactus" class="contactus__forms" action="#">
+                <div class="contactus__form">
+                    <input required name="name" type="text" placeholder="Your Name">
+                </div>
+                <div class="contactus__form">
+                    <input required name="email" type="email" placeholder="Your Email">
+                </div>
+                <div class="contactus__checkbox">
+                    <input required name="checkbox" type="checkbox">
+                    <label for="scales">Checkbox</label>
+                </div>
+                <div class="contactus__submit">
+                    <button class="btn btn_w95">Send</button>
+                </div>
+            </form>
 
         </div>
     </section>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="logo">
+                <img srcset="icons/logo/logo_96w.png, icons/logo/logo_192w.png 2x" src="icons/logo/logo_192w.png" alt="logo" class="logo__img">
+            </a>
+
+            <h2 class="footer__title">Contact us:</h2>
+            <a href="mailto:have@nicecoding.io" class="footer__mail">have@nicecoding.io</a>
+            <button class="footer__button btn btn_w220">Read Whitepaper</button>
+
+            <div class="footer__links">
+                <a href="#" class="footer__link">&COPY; Copywriters 2020</a>
+                <a href="#" class="footer__link">FAQ</a>
+                <a href="#" class="footer__link">Terms of Use</a>
+                <a href="#" class="footer__link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 <!-- JS scripts -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/modal-video.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>

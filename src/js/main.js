@@ -7,3 +7,5 @@ $(document).ready(function () {
         slidesToScroll: 2
     });
 });
+
+$(".js-modal-btn").modalVideo();
