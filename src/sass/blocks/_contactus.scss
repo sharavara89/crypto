@@ -2,30 +2,36 @@
     min-height: 681px;
     padding: 88px 0 78px;
     background: #252B42;
-    &__text {
+    &__subtitle {
+        display: block;
+        margin: 0 auto;
+        max-width: 340px;
         margin-top: 28px;
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
-        display: flex;
-        align-items: center;
         text-align: center;
         color: #FFFFFF;
     }
     &__forms {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        margin: 0 auto;
         margin-top: 50px;
         padding: 84px 16px 26px;
         min-height: 370px;
+        max-width: 401px;
         background: #4250BF;
         border-radius: 13px;
+        display: grid;
+        grid-template: minmax(116px, auto) 24px 46px / minmax(256px, 319px);
+        justify-content: center;
+        align-content: space-between;
     }
-    &__form {
-        min-width: 256px;
-        max-width: 319px;
-        height: 46px;
+    &__items {
+        display: grid;
+        grid-template: repeat(2, 46px) / 1fr;
+        align-content: space-between;
+    }
+    &__item {
         input {
             padding: 0 20px;
             width: 100%;
@@ -37,9 +43,11 @@
             font-size: 17px;
             line-height: 20px;
             color: #576677;
+            @include outline-style;
         }
     }
     &__checkbox {
+        margin-left: 4px;
         display: flex;
         justify-content: space-between;
         align-items: center;

@@ -1,12 +1,11 @@
 .header {
     position: fixed;
-    display: flex;
-    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 70px;
     background: #FFFFFF;
-    z-index: 1000;
+    z-index: 100;
     &__wrapper {
         padding: 24px 0;
         display: flex;

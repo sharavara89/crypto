@@ -1,9 +1,10 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/font';
-@import 'libs/modal-video.min';
+@import 'libs/modal-video';
 @import 'libs/slick';
 
 @import 'base/vars';
+@import 'base/mixin';
 
 * {
     font-family: 'Sen', sans-serif;
@@ -13,6 +14,10 @@
 
 p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+
+a {
+    outline-color: var(--focus-color);
 }
 
 .container {
@@ -26,6 +31,7 @@ p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
 @import 'blocks/logo';
 @import 'blocks/menu';
 @import 'blocks/promo';
+@import 'blocks/video';
 @import 'blocks/team';
 @import 'blocks/contactus';
 @import 'blocks/footer';

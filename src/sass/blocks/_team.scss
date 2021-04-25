@@ -1,5 +1,4 @@
 .team {
-    min-height: 456px;
     padding-bottom: 48px;
     &__slider {
         margin-top: 24px;
@@ -76,7 +75,7 @@
             margin-left: 0;
         }
         &:last-child {
-            margin-right: 3px;
+            margin-right: 0px;
         }
     }
     &-dots {

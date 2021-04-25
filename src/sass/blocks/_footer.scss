@@ -1,10 +1,18 @@
 .footer {
     position: relative;
     min-height: 346px;
-    padding: 27px 0 131px 0;
+    padding: 29px 0 131px 0;
     background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
+    &__contacts {
+        margin: 0 auto;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 59px;
+        width: 200px;
+    }
     &__title {
-        margin-top: 16px;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
@@ -13,18 +21,17 @@
         color: #263396;
     }
     &__mail {
-        margin-top: 16px;
+        position: relative;
         display: block;
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
         text-align: center;
         letter-spacing: 0.4px;
-        text-decoration: none;
         color: #0F81FF;
-        transition: all .3s;
         &:hover {
-            text-decoration: underline;
+            color: #0F81FF;
+            text-decoration: none;
         }
     }
     &__button {
@@ -44,9 +51,11 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-content: space-between;
     }
     &__link {
         font-weight: 400;
+        min-width: 136px;
         font-size: 12px;
         line-height: 24px;
         text-align: center;

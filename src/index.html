@@ -51,35 +51,40 @@
 <!-- Promo section -->
     <section id="home" class="promo">
         <div class="container">
-            <h1 class="promo__title">The first<br> fully-automatic social crypto trading platform with real crypto currency</h1>
+            <div class="promo__wrapper">
 
-            <h2 class="promo__subtitle">Subscribe and get the lastes information</h2>
+                <h1 class="promo__title">The first<br>
+                    fully-automatic social crypto trading platform with real crypto currency</h1>
 
-            <form id="subscribe__form" class="promo__form" action="#">
-                <input required name="email" type="email" placeholder="Enter your email">
-                <button class="btn promo__form-submit">Subscribe</button>
-            </form>
-
-            <div class="promo__social">
-                <a href="#" class="promo__social-item">
-                    <span class="icon-twitter"></span>
+                <h2 class="promo__subtitle">Subscribe and get the lastes information</h2>
+    
+                <form id="subscribe" class="promo__forms" action="#">
+                    <div class="promo__form">
+                        <input required name="email" type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="promo__submit">
+                        <button class="btn">Subscribe</button>
+                    </div>
+                </form>
+    
+                <div class="promo__social">
+                    <a href="#" class="promo__social-item">
+                        <span class="icon-twitter"></span>
+                    </a>
+                    <a href="#" class="promo__social-item">
+                        <span class="icon-facebook"></span>
+                    </a>
+                </div>
+    
+                <a href="#" class="promo__goto">
+                    <span class="icon-arrow-down"></span>
                 </a>
-                <a href="#" class="promo__social-item">
-                    <span class="icon-facebook"></span>
-                </a>
+    
+                <button class="js-modal-btn video" data-video-id="_Np5qTxZjKA">
+                    <img srcset="img/video_2x.png, img/video_2x.png 2x" src="img/video_2x.png" alt="video" class="video__img">
+                </button>
+
             </div>
-
-            <a href="#" class="promo__goto">
-                <span class="icon-arrow-down"></span>
-            </a>
-
-            <div class="promo__video">
-                <img srcset="img/video_2x.png, img/video_2x.png 2x" src="img/video_2x.png" alt="video" class="promo__video-img">
-            </div>
-
-            <!-- <button class="js-modal-btn" data-video-id="7TUOI23spt0">
-                <img srcset="img/video_2x.png, img/video_2x.png 2x" src="img/video_2x.png" alt="video" class="promo__video-img">
-            </button> -->
         </div>
     </section>
 <!-- Team section -->
@@ -156,15 +161,17 @@
         <div class="container">
             <h2 class="contactus__title title title_white">Contact Us</h2>
 
-            <div class="contactus__text">Most calendars are designed for teams. 
+            <div class="contactus__subtitle">Most calendars are designed for teams. 
                 Slate is designed for freelancers</div>
 
             <form id="contactus" class="contactus__forms" action="#">
-                <div class="contactus__form">
-                    <input required name="name" type="text" placeholder="Your Name">
-                </div>
-                <div class="contactus__form">
-                    <input required name="email" type="email" placeholder="Your Email">
+                <div class="contactus__items">
+                    <div class="contactus__item">
+                        <input required name="name" type="text" placeholder="Your Name">
+                    </div>
+                    <div class="contactus__item">
+                        <input required name="email" type="email" placeholder="Your Email">
+                    </div>
                 </div>
                 <div class="contactus__checkbox">
                     <input required name="checkbox" type="checkbox">
@@ -180,13 +187,18 @@
 <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <a href="#" class="logo">
-                <img srcset="icons/logo/logo_96w.png, icons/logo/logo_192w.png 2x" src="icons/logo/logo_192w.png" alt="logo" class="logo__img">
-            </a>
-
-            <h2 class="footer__title">Contact us:</h2>
-            <a href="mailto:have@nicecoding.io" class="footer__mail">have@nicecoding.io</a>
-            <button class="footer__button btn btn_w220">Read Whitepaper</button>
+            <div class="footer__items">
+                <a href="#" class="logo footer__logo">
+                    <img srcset="icons/logo/logo_96w.png, icons/logo/logo_192w.png 2x" src="icons/logo/logo_192w.png" alt="logo" class="logo__img">
+                </a>
+    
+                <div class="footer__contacts">
+                    <h2 class="footer__title">Contact us:</h2>
+                    <a href="mailto:have@nicecoding.io" class="footer__mail">have@nicecoding.io</a>
+                </div>
+    
+                <button class="footer__button btn btn_w220">Read Whitepaper</button>
+            </div>
 
             <div class="footer__links">
                 <a href="#" class="footer__link">&COPY; Copywriters 2020</a>
@@ -197,8 +209,8 @@
         </div>
     </footer>
 <!-- JS scripts -->
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/modal-video.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>

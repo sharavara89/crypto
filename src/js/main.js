@@ -1,3 +1,5 @@
+//Slick slider
+
 $(document).ready(function () {
     $('.team__slider').slick({
         arrows: false,

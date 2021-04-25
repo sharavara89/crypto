@@ -2,7 +2,7 @@
     width: 287px;
     height: 46px;
     background: #38A5DB;
-    border-radius: 25px;
+    border-radius: 100px;
     border: none;
     font-family: 'Open Sans';
     font-weight: 600;
@@ -21,4 +21,8 @@
         width: 220px;
         font-size: 16px;
     }
+}
+
+button {
+    @include outline-style;
 }
