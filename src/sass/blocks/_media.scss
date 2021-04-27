@@ -13,8 +13,7 @@
         margin-right: 0;
     }
     .promo {
-        padding: 198px 0 56px;
-        height: 1394px;
+        padding: 198px 0 58px;
         background: url('../img/tablet_bg.svg') center (center / cover) no-repeat;
         &__title {
             width: 569px;
@@ -74,12 +73,14 @@
             margin-top: 124px;
             width: 60px;
             height: 60px;
-            font-size: 24px;
+            font-size: 25px;
 
         }
     }
     .video {
         margin-top: 184px;
+        width: 544px;
+        height: 382px;
         &:after {
             width: 63px;
             height: 63px;
@@ -93,6 +94,9 @@
     }
     .team {
         &__slider {
+            &-modal {
+                width: 270px;
+            }
             margin-top: 30px;
             &-picture {
                 width: 131px;
@@ -116,9 +120,8 @@
                 margin-top: 16px;
                 font-size: 18px;
                 line-height: 24px;
-                width: 270px;
             }
-            &-social {
+            &-links {
                 margin-top: 32px;
             }
         }
@@ -155,8 +158,9 @@
             padding: unset;
             height: 24px;
             position: static;
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template: 24px / repeat(4, minmax(167px, auto));
+            grid-gap: unset;
             justify-content: center;
             background: unset;
         }
@@ -164,17 +168,84 @@
             padding: 0 7px;
             font-size: 18px;
             line-height: 24px;
-            min-width: 167px;
+            width: 100%;
             border-right: 2px solid #9CA4C7;
-            &:nth-child(2) {
-                order: 2;
-            }
-            &:nth-child(3) {
-                order: 3;
-            }
             &:last-child {
                 border-right: unset;
             }
         }
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1168px;
+        margin: 0 auto;
+        padding: 0;
+
+    }
+    .promo {
+        padding: 276px 0 172px;
+        min-height: 1020px;
+        background: url('../img/desctop_bg.svg') center (0 / cover) no-repeat;
+        &__wrapper {
+            margin: 0;
+            max-width: 566px;
+        }
+        &__form {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+        &__submit {
+            right: 0;
+        }
+        &__social {
+            position: fixed;
+            top: 676px;
+            right: 95px;
+        }
+    }
+    .video {
+        position: absolute;
+        margin: 0;
+        top: 196px;
+        right: 62px;
+    }
+    .team {
+        padding-bottom: 88px;
+        &__slider {
+            margin-top: 51px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .contactus {
+        min-height: 670px;
+        padding-bottom: 55px;
+    }
+    .footer {
+        &__links {
+
+            grid-template: 24px / repeat(4, minmax(200px, auto));
+        }
+        &__link {
+            &:first-child {
+                padding-right: 35px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1520px) {
+    .promo {
+        background: url('../img/desctop_bg.svg') center (20% / cover) no-repeat;
+    }
+}
+
+@media (min-width: 2560px) {
+    .promo {
+        background: url('../img/desctop_bg.svg') center (49% / cover) no-repeat;
     }
 }

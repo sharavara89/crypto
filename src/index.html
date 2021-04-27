@@ -52,7 +52,6 @@
     <section id="home" class="promo">
         <div class="container">
             <div class="promo__wrapper">
-
                 <h1 class="promo__title">The first<br>
                     fully-automatic social crypto trading platform with real crypto currency</h1>
 
@@ -66,25 +65,42 @@
                         <button class="btn">Subscribe</button>
                     </div>
                 </form>
-    
-                <div class="promo__social">
-                    <a href="#" class="promo__social-item">
-                        <span class="icon-twitter"></span>
-                    </a>
-                    <a href="#" class="promo__social-item">
-                        <span class="icon-facebook"></span>
-                    </a>
-                </div>
-    
-                <a href="#" class="promo__goto">
-                    <span class="icon-arrow-down"></span>
-                </a>
-    
-                <button class="js-modal-btn video" data-video-id="_Np5qTxZjKA">
-                    <img srcset="img/video_2x.png, img/video_2x.png 2x" src="img/video_2x.png" alt="video" class="video__img">
-                </button>
-
             </div>
+
+            <div class="promo__social">
+                <a href="#" target="_blank" class="promo__social-item">
+                    <span class="icon-twitter"></span>
+                </a>
+                <a href="#" target="_blank" class="promo__social-item">
+                    <span class="icon-facebook"></span>
+                </a>
+            </div>
+
+            <a href="#" class="promo__goto">
+                <span class="icon-arrow-down"></span>
+            </a>
+
+<!-- Modal video -->
+            <button class="video" data-video="https://www.youtube.com/embed/JxPR9qMg8ho" data-toggle="modal" data-target="#videoModal">
+                <img src="https://img.youtube.com/vi/JxPR9qMg8ho/maxresdefault.jpg" alt="video" class="video__img">
+            </button>
+
+
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <img src="icons/close.svg" alt="close">
+                            </button>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="#" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
 <!-- Team section -->
@@ -94,62 +110,70 @@
 <!-- Slick slider -->
             <div class="team__slider">
                 <div>
-                    <div class="team__slider-picture">
-                        <img srcset="img/team/Edgar_Morrison_131w.png, img/team/Edgar_Morrison_262w.png 2x" src="img/team/Edgar_Morrison_262w.png" alt="Edgar Morrison">
+                    <div class="team__slider-modal">
+                        <div class="team__slider-picture">
+                            <img srcset="img/team/Edgar_Morrison_131w.png, img/team/Edgar_Morrison_262w.png 2x" src="img/team/Edgar_Morrison_262w.png" alt="Edgar Morrison">
+                        </div>
+                        <h3 class="team__slider-name">Edgar Morrison</h3>
+                        <h4 class="team__slider-post">CEO</h4>
+                        <p class="team__slider-text">
+                            Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+                        </p>
                     </div>
-                    <h3 class="team__slider-name">Edgar Morrison</h3>
-                    <h4 class="team__slider-post">CEO</h4>
-                    <p class="team__slider-text">
-                        Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
-                    </p>
-                    <div class="team__slider-social">
-                        <a href="#" class="team__slider-social-link"><span class="icon-facebook"></span></a>
-                        <a href="#" class="team__slider-social-link"><span class="icon-linkedin2"></span></a>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="team__slider-picture">
-                        <img srcset="img/team/Mae_Martin_131w.png, img/team/Mae_Martin_262w.png 2x" src="img/team/Mae_Martin_262w.png" alt="Mae Martin">
-                    </div>
-                    <h3 class="team__slider-name">Mae Martin</h3>
-                    <h4 class="team__slider-post">CTO</h4>
-                    <p class="team__slider-text">
-                        Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
-                    </p>
-                    <div class="team__slider-social">
-                        <a href="#" class="team__slider-social-link"><span class="icon-facebook"></span></a>
-                        <a href="#" class="team__slider-social-link"><span class="icon-linkedin2"></span></a>
+                    <div class="team__slider-links">
+                        <a href="#" target="_blank" class="team__slider-link"><span class="icon-facebook"></span></a>
+                        <a href="#" target="_blank" class="team__slider-link"><span class="icon-linkedin2"></span></a>
                     </div>
                 </div>
 
                 <div>
-                    <div class="team__slider-picture">
-                        <img srcset="img/team/David_Banks_131w.png, img/team/David_Banks_262w.png 2x" src="img/team/David_Banks_262w.png" alt="David Banks">
+                    <div class="team__slider-modal">
+                        <div class="team__slider-picture">
+                            <img srcset="img/team/Mae_Martin_131w.png, img/team/Mae_Martin_262w.png 2x" src="img/team/Mae_Martin_262w.png" alt="Mae Martin">
+                        </div>
+                        <h3 class="team__slider-name">Mae Martin</h3>
+                        <h4 class="team__slider-post">CTO</h4>
+                        <p class="team__slider-text">
+                            Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+                        </p>
                     </div>
-                    <h3 class="team__slider-name">David Banks</h3>
-                    <h4 class="team__slider-post">CFO</h4>
-                    <p class="team__slider-text">
-                        Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
-                    </p>
-                    <div class="team__slider-social">
-                        <a href="#" class="team__slider-social-link"><span class="icon-facebook"></span></a>
-                        <a href="#" class="team__slider-social-link"><span class="icon-linkedin2"></span></a>
+                    <div class="team__slider-links">
+                        <a href="#" target="_blank" class="team__slider-link"><span class="icon-facebook"></span></a>
+                        <a href="#" target="_blank" class="team__slider-link"><span class="icon-linkedin2"></span></a>
                     </div>
                 </div>
 
                 <div>
-                    <div class="team__slider-picture">
-                        <img srcset="img/team/Frederick_Parsons_131w.png, img/team/Frederick_Parsons_262w.png 2x" src="img/team/Frederick_Parsons_262w.png" alt="Frederick Parsons">
+                    <div class="team__slider-modal">
+                        <div class="team__slider-picture">
+                            <img srcset="img/team/David_Banks_131w.png, img/team/David_Banks_262w.png 2x" src="img/team/David_Banks_262w.png" alt="David Banks">
+                        </div>
+                        <h3 class="team__slider-name">David Banks</h3>
+                        <h4 class="team__slider-post">CFO</h4>
+                        <p class="team__slider-text">
+                            Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+                        </p>
                     </div>
-                    <h3 class="team__slider-name">Frederick Parsons</h3>
-                    <h4 class="team__slider-post">CEO</h4>
-                    <p class="team__slider-text">
-                        Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
-                    </p>
-                    <div class="team__slider-social">
-                        <a href="#" class="team__slider-social-link"><span class="icon-facebook"></span></a>
-                        <a href="#" class="team__slider-social-link"><span class="icon-linkedin2"></span></a>
+                    <div class="team__slider-links">
+                        <a href="#" target="_blank" class="team__slider-link"><span class="icon-facebook"></span></a>
+                        <a href="#" target="_blank" class="team__slider-link"><span class="icon-linkedin2"></span></a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="team__slider-modal">
+                        <div class="team__slider-picture">
+                            <img srcset="img/team/Frederick_Parsons_131w.png, img/team/Frederick_Parsons_262w.png 2x" src="img/team/Frederick_Parsons_262w.png" alt="Frederick Parsons">
+                        </div>
+                        <h3 class="team__slider-name">Frederick Parsons</h3>
+                        <h4 class="team__slider-post">COO</h4>
+                        <p class="team__slider-text">
+                            Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+                        </p>
+                    </div>
+                    <div class="team__slider-links">
+                        <a href="#" target="_blank" class="team__slider-link"><span class="icon-facebook"></span></a>
+                        <a href="#" target="_blank" class="team__slider-link"><span class="icon-linkedin2"></span></a>
                     </div>
                 </div>
 
@@ -174,8 +198,8 @@
                     </div>
                 </div>
                 <div class="contactus__checkbox">
-                    <input required name="checkbox" type="checkbox">
-                    <label for="scales">Checkbox</label>
+                    <input required name="checkbox" type="checkbox" id="agree">
+                    <label for="agree">Checkbox</label>
                 </div>
                 <div class="contactus__submit">
                     <button class="btn btn_w95">Send</button>
@@ -208,10 +232,10 @@
             </div>
         </div>
     </footer>
-<!-- JS scripts -->
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="js/modal-video.min.js"></script>
+<!-- JS scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>

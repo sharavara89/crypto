@@ -1,6 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap.min';
 @import 'libs/font';
-@import 'libs/modal-video';
 @import 'libs/slick';
 
 @import 'base/vars';
@@ -18,6 +18,9 @@ p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
 
 a {
     outline-color: var(--focus-color);
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .container {

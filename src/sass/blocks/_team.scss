@@ -1,7 +1,19 @@
 .team {
     padding-bottom: 48px;
+    &__title {
+        margin-left: 12px;
+    }
     &__slider {
         margin-top: 24px;
+        &-modal {
+            margin: 0 auto;
+            width: 136px;
+            transition: all .3s;
+            cursor: pointer;
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
         &-picture {
             margin: 0 auto;
             width: 115px;
@@ -33,7 +45,6 @@
         }
         &-text {
             display: block;
-            width: 136px;
             margin: 0 auto;
             margin-top: 8px;
             font-weight: 400;
@@ -42,42 +53,34 @@
             text-align: center;
             color: #45515F;
         }
-        &-social {
+        &-links {
             margin-top: 14px;
             display: flex;
             justify-content: center;
-            &-link {
-                margin: 0 3px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 43px;
-                height: 23px;
-                border: 1px solid rgba(127, 139, 152, 0.3);
-                border-radius: 3px;
+        }
+        &-link {
+            margin: 0 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 43px;
+            height: 23px;
+            border: 1px solid rgba(127, 139, 152, 0.3);
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #001832;
+            transition: all .3s;
+            &:hover {
+                color: #ffffff;
+                background: #38A5DB;
                 text-decoration: none;
-                font-size: 14px;
-                color: #001832;
-                transition: all .3s;
-                &:hover {
-                    color: #ffffff;
-                    background: #38A5DB;
-                }
             }
         }
     }
 }
 
 .slick {
-    &-slide {
-        margin: 0 3px;
-        &:first-child {
-            margin-left: 0;
-        }
-        &:last-child {
-            margin-right: 0px;
-        }
-    }
     &-dots {
         margin-top: 34px;
         display: flex;

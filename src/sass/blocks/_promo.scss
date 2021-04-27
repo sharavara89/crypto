@@ -59,6 +59,7 @@
         height: 69px;
         width: 30px;
         flex-direction: column;
+        z-index: 1;
         &-item {
             display: flex;
             justify-content: center;

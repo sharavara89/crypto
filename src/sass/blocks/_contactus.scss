@@ -2,6 +2,9 @@
     min-height: 681px;
     padding: 88px 0 78px;
     background: #252B42;
+    &__title {
+        margin-left: 12px;
+    }
     &__subtitle {
         display: block;
         margin: 0 auto;
@@ -22,7 +25,7 @@
         background: #4250BF;
         border-radius: 13px;
         display: grid;
-        grid-template: minmax(116px, auto) 24px 46px / minmax(256px, 319px);
+        grid-template: minmax(116px, auto) 25px 46px / minmax(256px, 319px);
         justify-content: center;
         align-content: space-between;
     }
@@ -53,16 +56,20 @@
         align-items: center;
         width: 110px;
         input {
+            margin: 0;
             border: none;
-            width: 24px;
-            height: 24px;
+            width: 25px;
+            height: 25px;
             background: #FFFFFF;
             cursor: pointer;
         }
         label {
+            font-weight: 400;
             font-size: 17px;
             line-height: 20px;
             color: #FFFFFF;
+            margin-bottom: 2px;
+
         }
     }
 }
