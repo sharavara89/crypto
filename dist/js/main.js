@@ -24,42 +24,7 @@ $(document).ready(function () {
         ]
     });
 
-
-    function validateForms(form) {
-        $(form).validate({
-            rules:{
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                phone: "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-                text: {
-                    required: true,
-                    minlength: 10
-                }
-            },
-            messages: {
-                name: {
-                    required: "Пожалуйста, введите свое имя",
-                    minlength: jQuery.validator.format("Ведите минимум {0} символа!")
-                },
-                phone: "Пожалуйста, введите свой номер телефона",
-                email: {
-                    required: "Пожалуйста, введите свою почту",
-                    email: "Адрес должен быть в формате example@domain.com"
-                },
-                text: {
-                    required: "Пожалуйста, введите свое сообщение",
-                    minlength: jQuery.validator.format("Ведите минимум {0} символов!")
-                }
-            }
-        });
-    }
-
+//Modal video replacing iframe src
 
     $(function() {
         $(".video").click(function () {
