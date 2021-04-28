@@ -13,6 +13,7 @@ Libraries and tools that I used to complete the task:
 - Slick Slider
 - Animate.css
 - Wow.js
+- Gulp
 
 The web-page itself is adapted for phones, tablets and desktop.
 
