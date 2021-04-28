@@ -8,13 +8,12 @@
         &-modal {
             display: block;
             margin: 0 auto;
-            width: 136px;
+            max-width: 136px;
             border-radius: 10px;
             cursor: pointer;
             transition: all .3s;
             &:hover {
                 transform: scale(0.95);
-                background-color: rgba(56, 165, 219, 0.1);
             }
         }
         &-picture {
@@ -55,6 +54,7 @@
             line-height: 18px;
             text-align: center;
             color: #45515F;
+            max-width: 136px;
         }
         &-links {
             margin-top: 14px;
@@ -116,5 +116,8 @@
         button {
             background:#4250BF;
         }
+    }
+    &-slide {
+        outline-color: var(--outline-color);
     }
 }

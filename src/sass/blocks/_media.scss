@@ -95,7 +95,7 @@
     .team {
         &__slider {
             &-modal {
-                width: 270px;
+                max-width: 270px;
             }
             margin-top: 30px;
             &-picture {
@@ -120,6 +120,7 @@
                 margin-top: 16px;
                 font-size: 18px;
                 line-height: 24px;
+                max-width: 270px;
             }
             &-links {
                 margin-top: 32px;
@@ -172,6 +173,26 @@
             border-right: 2px solid #9CA4C7;
             &:last-child {
                 border-right: unset;
+            }
+        }
+    }
+    .modal_slider {
+        .modal {
+            &-content {
+                height: 744px;
+                width: 613px;
+            }
+            &-header {
+                padding: 72px 22px 32px;
+            }
+            &-name {
+                font-size: 40px;
+                line-height: 34px;
+            }
+            &-body {
+                padding: 0 22px 50px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
@@ -236,16 +257,42 @@
             }
         }
     }
+    .modal_slider {
+        .modal {
+            &-content {
+                width: 630px;
+            }
+            &-header {
+                padding: 72px 30px 32px;
+            }
+            &-body {
+                padding: 0 30px 50px;
+            }
+        }
+    }
 }
 
-@media (min-width: 1520px) {
+@media (min-width: 1536px) {
     .promo {
-        background: url('../img/desctop_bg.svg') center (20% / cover) no-repeat;
+        background: url('../img/desctop_bg.svg') center (15% / cover) no-repeat;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .promo {
+        background: url('../img/desctop_bg.svg') center (18% / cover) no-repeat;
+    }
+}
+
+@media (min-width: 1920px) {
+    .promo {
+        background: url('../img/desctop_bg.svg') center (36% / cover) no-repeat;
     }
 }
 
 @media (min-width: 2560px) {
     .promo {
-        background: url('../img/desctop_bg.svg') center (49% / cover) no-repeat;
+        background: url('../img/desctop_bg.svg') center (48% / cover) no-repeat;
     }
 }
