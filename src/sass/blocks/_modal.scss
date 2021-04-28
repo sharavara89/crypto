@@ -1,0 +1,35 @@
+.in {
+    background: rgba(37, 43, 66, .5);
+}
+
+.modal_video {
+    .modal-content {
+        border-radius: 20px;
+    }
+    .modal-header {
+        padding: 16px;
+        margin: 0;
+        border-bottom: unset;
+        display: flex;
+        flex-direction: column;
+        .close {
+            align-self: flex-end;
+            margin: 0;
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            font-size: 0;
+            transition: all .3s;
+            &:hover {
+                transform: scale(1.3);
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .modal-body {
+        padding-top: 0;
+    }
+}

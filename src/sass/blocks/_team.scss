@@ -6,12 +6,15 @@
     &__slider {
         margin-top: 24px;
         &-modal {
+            display: block;
             margin: 0 auto;
             width: 136px;
-            transition: all .3s;
+            border-radius: 10px;
             cursor: pointer;
+            transition: all .3s;
             &:hover {
                 transform: scale(0.95);
+                background-color: rgba(56, 165, 219, 0.1);
             }
         }
         &-picture {
@@ -79,6 +82,8 @@
         }
     }
 }
+
+// Slider styles
 
 .slick {
     &-dots {

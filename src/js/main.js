@@ -33,7 +33,7 @@ $(function() {
     $(theModal + ' iframe').attr('src', videoSRCauto);
     $(theModal + ' button.close').click(function () {
         $(theModal + ' iframe').attr('src', '');
-    });
+        });
     });
 });
 

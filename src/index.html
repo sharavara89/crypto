@@ -80,27 +80,28 @@
                 <span class="icon-arrow-down"></span>
             </a>
 
-<!-- Modal video -->
-            <button class="video" data-video="https://www.youtube.com/embed/JxPR9qMg8ho" data-toggle="modal" data-target="#videoModal">
+<!-- Modal video button -->
+            <button class="video" data-video="https://www.youtube.com/embed/JxPR9qMg8ho?autoplay=1" data-toggle="modal" data-target="#videoModal">
                 <img src="https://img.youtube.com/vi/JxPR9qMg8ho/maxresdefault.jpg" alt="video" class="video__img">
             </button>
-
-
-            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+<!-- Modal video popup -->
+            <div class="modal modal_video fade" id="videoModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
-                        <div class="modal-body">
+                        <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <img src="icons/close.svg" alt="close">
                             </button>
+                        </div>
+                        <div class="modal-body">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe src="#" allowfullscreen></iframe>
+                                <iframe src="#" allow="autoplay" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 <!-- Team section -->
@@ -110,7 +111,7 @@
 <!-- Slick slider -->
             <div class="team__slider">
                 <div>
-                    <div class="team__slider-modal">
+                    <a class="team__slider-modal" data-toggle="modal" data-target="#ceo">
                         <div class="team__slider-picture">
                             <img srcset="img/team/Edgar_Morrison_131w.png, img/team/Edgar_Morrison_262w.png 2x" src="img/team/Edgar_Morrison_262w.png" alt="Edgar Morrison">
                         </div>
@@ -119,7 +120,8 @@
                         <p class="team__slider-text">
                             Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
                         </p>
-                    </div>
+                    </a>
+
                     <div class="team__slider-links">
                         <a href="#" target="_blank" class="team__slider-link"><span class="icon-facebook"></span></a>
                         <a href="#" target="_blank" class="team__slider-link"><span class="icon-linkedin2"></span></a>
@@ -232,6 +234,25 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ceo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="icons/close.svg" alt="close">
+                </button>
+                <h3 class="team__slider-name">Edgar Morrison</h3>
+                <h4 class="team__slider-post">CEO</h4>
+            </div>
+            <div class="modal-body">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. 
+            </div>
+        </div>
+        </div>
+    </div>
 
 <!-- JS scripts -->
     <script src="js/jquery-3.6.0.min.js"></script>
