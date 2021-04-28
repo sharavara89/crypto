@@ -16,6 +16,7 @@ Libraries and tools that I used to complete the task:
 - Gulp
 
 The web-page itself is adapted for phones, tablets and desktop.
+Used mobile first approach.
 Added favicon, "meta tags" and some simple animations (Animate.css + Wow.js).
 
 Pixel Perfect approach was applied as much as possible (inaccuracies in the layout).
