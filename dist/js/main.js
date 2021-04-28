@@ -41,4 +41,13 @@ $(document).ready(function () {
     $('#videoModal').on('hidden.bs.modal', function (e) {
         $('#videoModal').find('iframe').attr('src', '');
     });
+
+//Wow.js
+
+    var wow = new WOW(
+        {
+          animateClass: 'animate__animated',
+        }
+      );
+      wow.init();
 });
