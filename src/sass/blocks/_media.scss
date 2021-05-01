@@ -11,6 +11,7 @@
     .menu {
         width: 217px;
         margin-right: 0;
+        margin-bottom: 4px;
     }
     .promo {
         padding: 198px 0 58px;
@@ -141,6 +142,9 @@
     .footer {
         padding: 40px 0 47px 0;
         min-height: unset;
+        &__logo {
+            margin-bottom: 6px;
+        }
         &__items {
             display: flex;
             justify-content: space-between;
@@ -224,7 +228,7 @@
         }
         &__social {
             position: fixed;
-            top: 676px;
+            top: 684px;
             right: 95px;
         }
     }
@@ -232,7 +236,7 @@
         position: absolute;
         margin: 0;
         top: 196px;
-        right: 62px;
+        right: 61px;
     }
     .team {
         padding-bottom: 88px;
@@ -248,7 +252,7 @@
     }
     .footer {
         &__links {
-
+            margin-top: 58px;
             grid-template: 24px / repeat(4, minmax(200px, auto));
         }
         &__link {

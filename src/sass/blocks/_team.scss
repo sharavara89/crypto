@@ -1,5 +1,6 @@
 .team {
     padding-bottom: 48px;
+    overflow: hidden;
     &__title {
         margin-left: 12px;
     }
@@ -87,7 +88,7 @@
 
 .slick {
     &-dots {
-        margin-top: 34px;
+        margin-top: 32px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -118,6 +119,9 @@
         }
     }
     &-slide {
-        outline-color: var(--outline-color);
+        &:focus {
+            outline: none;
+            box-shadow: 0px 0px 0 2px var(--outline-color);
+        }
     }
 }

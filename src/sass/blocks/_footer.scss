@@ -4,6 +4,9 @@
     padding: 29px 0 131px 0;
     background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
     z-index: 2;
+    &__logo {
+        margin-top: 1px;
+    }
     &__contacts {
         margin: 0 auto;
         margin-top: 18px;
